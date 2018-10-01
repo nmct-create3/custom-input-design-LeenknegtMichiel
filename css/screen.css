@@ -730,6 +730,12 @@ input::placeholder {
     align-items: center;
     justify-content: center;
 }
+.c-custom-input-option-label:hover{
+    color: var(--color-alpha-dark);
+}
+.c-custom-input-option-label:focus{
+    color: var(--color-alpha-x-dark);
+}
 .c-custom-input-option-label{
     display:flex;
 }
