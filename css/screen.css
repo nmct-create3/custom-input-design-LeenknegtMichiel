@@ -726,9 +726,6 @@ input::placeholder {
     border: 1px solid var(--color-alpha);
     margin-right: 8px;
     box-shadow: var(--inset-shadow);
-    /*
-    opacity: 0;
-    */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -743,11 +740,18 @@ input::placeholder {
 .c-custom-input-option--checkbox{
     border-radius: 3px;
 }
+.c-custom-input-option__symbol{
+    opacity: 0;
+    transition: 200ms;
+}
 
 .c-custom-input-option--checkbox .c-custom-input-option__symbol {
     width: 10px;
     height: 10px;
     fill: var(--color-alpha);
+    
+    
+    
 
   }
 .c-custom-input-option--radio .c-custom-input-option__symbol {
@@ -762,7 +766,8 @@ input::placeholder {
     /*
         Do magic stuff here, for example:
         background-color: red;
-    */
+        */
+        
 }
 
 .c-custom-input-option-hidden:checked + .c-custom-input-option-label .c-custom-input-option__symbol {
@@ -771,6 +776,8 @@ input::placeholder {
         fill: blue;
         
     */
+    transition: 200ms;
+    opacity: 1;
     
 }
 
