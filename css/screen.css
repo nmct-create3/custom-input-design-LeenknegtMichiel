@@ -702,11 +702,11 @@ input::placeholder {
 */
 
 .c-option-list {
-
+    margin-bottom: 24px;
 }
 
 .c-option-list__item {
-
+    margin-bottom: 12px;
 }
 
 /*
